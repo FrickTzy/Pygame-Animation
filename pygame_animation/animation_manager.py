@@ -106,6 +106,16 @@ class AnimationManager(ABC):
         """
         pass
 
+    def set_target(self, current_value: int, target_value: int) -> None:
+        """
+        Set up the target manager with the current and target values.
+
+        Args:
+            current_value (int): The current value before the animation starts.
+            target_value (int): The desired target value to reach after the animation.
+        """
+        self.__target_manager.setup(current_value=current_value, target_value=target_value)
+
 
 class _AnimationStartManager:
     start_animation: bool = False
