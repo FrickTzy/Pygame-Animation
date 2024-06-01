@@ -1,6 +1,6 @@
-from smoothing_methods import EaseOutSuperFastSmoothing, SmoothingInterface
-from smooth_animation import SmoothAnimation
-from target_manager import TargetManager
+from .smoothing_methods import EaseOutSuperFastSmoothing, SmoothingInterface
+from .smooth_animation import SmoothAnimation
+from .target_manager import TargetManager
 from abc import ABC, abstractmethod
 
 
